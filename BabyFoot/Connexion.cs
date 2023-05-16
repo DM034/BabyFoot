@@ -9,7 +9,7 @@ namespace BabyFoot
 {
     public class Connexion
     {
-        public NpgsqlConnection GetConn()
+        public static NpgsqlConnection GetConn()
         {
             string connectionString = "Server=localhost;Port=5432;Database=babyfoot;User Id=postgres;Password=366325";
             NpgsqlConnection connection = new NpgsqlConnection(connectionString);
