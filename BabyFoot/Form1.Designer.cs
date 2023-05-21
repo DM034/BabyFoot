@@ -74,8 +74,10 @@
             this.tirematy = new System.Windows.Forms.Button();
             this.piece = new System.Windows.Forms.Button();
             this.tsymaty = new System.Windows.Forms.Button();
-            this.goal1 = new System.Windows.Forms.Button();
-            this.goal2 = new System.Windows.Forms.Button();
+            this.H = new System.Windows.Forms.Button();
+            this.B = new System.Windows.Forms.Button();
+            this.G = new System.Windows.Forms.Button();
+            this.D = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainA)).BeginInit();
@@ -512,7 +514,7 @@
             // tirematy
             // 
             this.tirematy.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.tirematy.Location = new System.Drawing.Point(174, 516);
+            this.tirematy.Location = new System.Drawing.Point(64, 516);
             this.tirematy.Name = "tirematy";
             this.tirematy.Size = new System.Drawing.Size(75, 37);
             this.tirematy.TabIndex = 37;
@@ -522,7 +524,7 @@
             // 
             // piece
             // 
-            this.piece.Location = new System.Drawing.Point(363, 516);
+            this.piece.Location = new System.Drawing.Point(216, 516);
             this.piece.Name = "piece";
             this.piece.Size = new System.Drawing.Size(75, 37);
             this.piece.TabIndex = 38;
@@ -533,7 +535,7 @@
             // tsymaty
             // 
             this.tsymaty.BackColor = System.Drawing.Color.IndianRed;
-            this.tsymaty.Location = new System.Drawing.Point(551, 516);
+            this.tsymaty.Location = new System.Drawing.Point(379, 516);
             this.tsymaty.Name = "tsymaty";
             this.tsymaty.Size = new System.Drawing.Size(75, 37);
             this.tsymaty.TabIndex = 39;
@@ -541,33 +543,55 @@
             this.tsymaty.UseVisualStyleBackColor = false;
             this.tsymaty.Click += new System.EventHandler(this.tsymaty_Click);
             // 
-            // goal1
+            // H
             // 
-            this.goal1.Location = new System.Drawing.Point(266, 569);
-            this.goal1.Name = "goal1";
-            this.goal1.Size = new System.Drawing.Size(75, 23);
-            this.goal1.TabIndex = 40;
-            this.goal1.Text = "Goal1";
-            this.goal1.UseVisualStyleBackColor = true;
-            this.goal1.Click += new System.EventHandler(this.goal1_Click);
+            this.H.Location = new System.Drawing.Point(664, 495);
+            this.H.Name = "H";
+            this.H.Size = new System.Drawing.Size(42, 35);
+            this.H.TabIndex = 40;
+            this.H.Text = "H";
+            this.H.UseVisualStyleBackColor = true;
+            this.H.Click += new System.EventHandler(this.H_Click);
             // 
-            // goal2
+            // B
             // 
-            this.goal2.Location = new System.Drawing.Point(466, 569);
-            this.goal2.Name = "goal2";
-            this.goal2.Size = new System.Drawing.Size(75, 23);
-            this.goal2.TabIndex = 41;
-            this.goal2.Text = "Goal2";
-            this.goal2.UseVisualStyleBackColor = true;
-            this.goal2.Click += new System.EventHandler(this.goal2_Click);
+            this.B.Location = new System.Drawing.Point(664, 570);
+            this.B.Name = "B";
+            this.B.Size = new System.Drawing.Size(42, 35);
+            this.B.TabIndex = 41;
+            this.B.Text = "B";
+            this.B.UseVisualStyleBackColor = true;
+            this.B.Click += new System.EventHandler(this.B_Click);
+            // 
+            // G
+            // 
+            this.G.Location = new System.Drawing.Point(620, 533);
+            this.G.Name = "G";
+            this.G.Size = new System.Drawing.Size(42, 35);
+            this.G.TabIndex = 42;
+            this.G.Text = "G";
+            this.G.UseVisualStyleBackColor = true;
+            this.G.Click += new System.EventHandler(this.G_Click);
+            // 
+            // D
+            // 
+            this.D.Location = new System.Drawing.Point(709, 533);
+            this.D.Name = "D";
+            this.D.Size = new System.Drawing.Size(42, 35);
+            this.D.TabIndex = 43;
+            this.D.Text = "D";
+            this.D.UseVisualStyleBackColor = true;
+            this.D.Click += new System.EventHandler(this.D_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 617);
-            this.Controls.Add(this.goal2);
-            this.Controls.Add(this.goal1);
+            this.Controls.Add(this.D);
+            this.Controls.Add(this.G);
+            this.Controls.Add(this.B);
+            this.Controls.Add(this.H);
             this.Controls.Add(this.tsymaty);
             this.Controls.Add(this.piece);
             this.Controls.Add(this.tirematy);
@@ -671,8 +695,10 @@
         private System.Windows.Forms.Button tirematy;
         private System.Windows.Forms.Button piece;
         private System.Windows.Forms.Button tsymaty;
-        private System.Windows.Forms.Button goal1;
-        private System.Windows.Forms.Button goal2;
+        private System.Windows.Forms.Button H;
+        private System.Windows.Forms.Button B;
+        private System.Windows.Forms.Button G;
+        private System.Windows.Forms.Button D;
     }
 }
 

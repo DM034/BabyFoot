@@ -335,7 +335,13 @@ namespace BabyFoot
                 SetScore1();
                 int s1 = GetScore1();
                 label3.Text = s1.ToString();
-                MessageBox.Show("aaaaa");
+                if(s1 == 3)
+                {
+                    MessageBox.Show("Equipe 1 a gagne!");
+                    Accueil acc = new Accueil();
+                    acc.Show();
+                    this.Close();
+                }
             }else if (x == 519 || x == 466 || x == 300 || x == 128)
             {
                 int rand = random.Next(175, 230);
@@ -343,6 +349,13 @@ namespace BabyFoot
                 SetScore2();
                 int s2 = GetScore2();
                 label4.Text = s2.ToString();
+                if (s2 == 3)
+                {
+                    MessageBox.Show("Equipe 2 a gagne!");
+                    Accueil acc = new Accueil();
+                    acc.Show();
+                    this.Close();
+                }
             }
         }
 
@@ -390,11 +403,21 @@ namespace BabyFoot
                         SetLocationBall1(tab1[i+1]);
                         MessageBox.Show(tab1[i+1].ToString());
                         timer1 = new Timer();
-                        timer1.Interval = 10000; // Définissez ici l'intervalle souhaité en millisecondes
+                        timer1.Interval = 1000; // Définissez ici l'intervalle souhaité en millisecondes
                         timer1.Start();
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(565, rand);
+                        SetScore1();
+                        int s1 = GetScore1();
+                        label3.Text = s1.ToString();
+                        if (s1 == 3)
+                        {
+                            MessageBox.Show("Equipe 1 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {
@@ -406,6 +429,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(565, rand);
+                        SetScore1();
+                        int s1 = GetScore1();
+                        label3.Text = s1.ToString();
+                        if (s1 == 3)
+                        {
+                            MessageBox.Show("Equipe 1 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     break;
                 }
@@ -424,6 +457,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(565, rand);
+                        SetScore1();
+                        int s1 = GetScore1();
+                        label3.Text = s1.ToString();
+                        if (s1 == 3)
+                        {
+                            MessageBox.Show("Equipe 1 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {
@@ -435,6 +478,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(565, rand);
+                        SetScore1();
+                        int s1 = GetScore1();
+                        label3.Text = s1.ToString();
+                        if (s1 == 3)
+                        {
+                            MessageBox.Show("Equipe 1 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     break;
                 }
@@ -453,6 +506,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(565, rand);
+                        SetScore1();
+                        int s1 = GetScore1();
+                        label3.Text = s1.ToString();
+                        if (s1 == 3)
+                        {
+                            MessageBox.Show("Equipe 1 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {
@@ -464,6 +527,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(565, rand);
+                        SetScore1();
+                        int s1 = GetScore1();
+                        label3.Text = s1.ToString();
+                        if (s1 == 3)
+                        {
+                            MessageBox.Show("Equipe 1 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     break;
                 }
@@ -480,11 +553,21 @@ namespace BabyFoot
                         SetLocationBall2(tab4[i + 1]);
                         MessageBox.Show(tab4[i + 1].ToString());
                         timer1 = new Timer();
-                        timer1.Interval = 10000; // Définissez ici l'intervalle souhaité en millisecondes
+                        timer1.Interval = 1000; // Définissez ici l'intervalle souhaité en millisecondes
                         timer1.Start();
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(8, rand);
+                        SetScore2();
+                        int s2 = GetScore2();
+                        label4.Text = s2.ToString();
+                        if (s2 == 3)
+                        {
+                            MessageBox.Show("Equipe 2 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {
@@ -496,6 +579,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(8, rand);
+                        SetScore2();
+                        int s2 = GetScore2();
+                        label4.Text = s2.ToString();
+                        if (s2 == 3)
+                        {
+                            MessageBox.Show("Equipe 2 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     break;
                 }
@@ -514,6 +607,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(8, rand);
+                        SetScore2();
+                        int s2 = GetScore2();
+                        label4.Text = s2.ToString();
+                        if (s2 == 3)
+                        {
+                            MessageBox.Show("Equipe 2 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {
@@ -525,6 +628,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(8, rand);
+                        SetScore2();
+                        int s2 = GetScore2();
+                        label4.Text = s2.ToString();
+                        if (s2 == 3)
+                        {
+                            MessageBox.Show("Equipe 2 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     break;
                 }
@@ -543,6 +656,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(8, rand);
+                        SetScore2();
+                        int s2 = GetScore2();
+                        label4.Text = s2.ToString();
+                        if (s2 == 3)
+                        {
+                            MessageBox.Show("Equipe 2 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {
@@ -554,6 +677,16 @@ namespace BabyFoot
                         timer1.Stop();
                         int rand = random.Next(175, 230);
                         ball.Location = new Point(8, rand);
+                        SetScore2();
+                        int s2 = GetScore2();
+                        label4.Text = s2.ToString();
+                        if (s2 == 3)
+                        {
+                            MessageBox.Show("Equipe 2 a gagne!");
+                            Accueil acc = new Accueil();
+                            acc.Show();
+                            this.Close();
+                        }
                     }
                     break;
                 }
@@ -593,24 +726,40 @@ namespace BabyFoot
 
         }
 
-        private void goal1_Click(object sender, EventArgs e)
+        private void H_Click(object sender, EventArgs e)
         {
-            Button goal1 = new Button();
-            goal1.BackColor = Color.Red;
-            goal1.Location = new Point(26, 247);
-            goal1.Name = "goal";
-            goal1.Size = new Size(46, 34);
-            goal1.TabIndex = 1;
-            goal1.Text = "A1";
-            goal1.UseVisualStyleBackColor = false;
-            goal1.Click += new System.EventHandler(this.A1_Click);
-            this.Controls.Add(goal1);
-            this.Refresh();
+            Button but = GetBall();
+            int x = but.Location.X;
+
+            but.Location = new Point(x, but.Location.Y-10);
+            SetLocationBall2(but);
         }
 
-        private void goal2_Click(object sender, EventArgs e)
+        private void B_Click(object sender, EventArgs e)
         {
+            Button but = GetBall();
+            int x = but.Location.X;
 
+            but.Location = new Point(x, but.Location.Y + 10);
+            SetLocationBall2(but);
+        }
+
+        private void G_Click(object sender, EventArgs e)
+        {
+            Button but = GetBall();
+            int y = but.Location.Y;
+
+            but.Location = new Point(but.Location.X - 10,y);
+            SetLocationBall2(but);
+        }
+
+        private void D_Click_1(object sender, EventArgs e)
+        {
+            Button but = GetBall();
+            int y = but.Location.Y;
+
+            but.Location = new Point(but.Location.X + 10, y);
+            SetLocationBall2(but);
         }
     }
 }
